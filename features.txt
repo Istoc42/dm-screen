@@ -1,0 +1,17 @@
+** DICE ROLLER **
+
+To add:
+- Quick roll buttons for all 7 dice
+- Modifier for quick roller
+- Text area to return results. (Up to around 10?)
+- Input area to make custom rolls
+- Toggle roll sound button
+
+--------------------------------------------------------------------
+** LOOT GENERATOR **
+
+To add:
+- Dropdown / quick buttons to roll Magic Item Tables
+- Hoard / treasure tables by adventure tier
+- Poor / Average / Weathly post encounter loot tables
+- Trinket tables (e.g. Blinksy toys, random mundane items)
