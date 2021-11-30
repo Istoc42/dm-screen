@@ -83,4 +83,8 @@ input::-webkit-inner-spin-button {
   .input-area {
     flex-direction: column;
   }
+
+  nav ul li a {
+    font-size: 12px;
+  }
 }
