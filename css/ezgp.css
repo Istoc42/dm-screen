@@ -1,0 +1,74 @@
+#ezgp-container {
+  margin-top: 2rem;
+  background-image: url(https://images.pexels.com/photos/3790639/pexels-photo-3790639.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260);
+  color: #fff;
+}
+
+.ezgp-container {
+  width: 600px;
+}
+
+.ezgp-header {
+  margin-bottom: 15px;
+}
+
+.input-area {
+  display: flex;
+}
+
+.input-area div {
+  margin: 2px;
+}
+
+.input-area input[type='number'] {
+  border: none;
+  border-radius: 10px;
+  height: 40px;
+  margin: 5px 0;
+  width: 100%;
+  font-size: 32px;
+  text-align: center;
+}
+
+input:focus {
+  box-shadow: 0 0 10px #d4af37;
+  border: 1px solid #d4af37;
+  outline: none;
+}
+
+.copper {
+  background-color: #b87333;
+}
+
+.silver {
+  background-color: #c0c0c0;
+}
+
+.electrum {
+  background-color: #e7c697;
+}
+
+.gold {
+  background-color: #d4af37;
+}
+
+.platinum {
+  background-color: #e5e4e2;
+}
+
+.total {
+  margin: 5px 0;
+  padding: 10px;
+  border-radius: 5px;
+  background-color: #d4af37;
+  font-size: 2rem;
+}
+
+input[type=number] {
+    -moz-appearance: textfield;
+  }
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;

@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  z-index: 2;
+}
+
+body {
+  overflow: hidden;
+  background-image: url('https://wallpaperaccess.com/full/1868703.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+nav {
+  background-color: #530505;
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  width: 100%;
+  height: 60px;
+  font-family: 'Merriweather', serif;
+}
+
+nav ul {
+  display: flex;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  height: 60px;
+}
+
+nav li {
+  color: #777;
+  cursor: pointer;
+  flex: 1;
+  padding: 20px;
+  text-align: center;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  margin: 0 1px;
+  border-left: 2px black solid;
+  border-top: 1px black solid;
+  border-right: 1px black solid;
+}
+
+nav li a {
+  text-decoration: none;
+  display: block;
+  width: 100%;
+  height: 100%;
+  color: white;
+}
+
+nav ul li p {
+  font-size: 12px;
+  margin: 2px 0;
+}
+
+nav ul li:hover,
+nav ul li.active {
+  color: #0f2aa0;
+  background-color: #751710;
+  border-bottom: 1px #751710 solid;
+}
+
+.content {
+  position: relative;
+  display: none;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  width: 100%;
+}
+
+.content-container {
+  border: 1px solid black;
+  background-color: rgba(0, 0, 0, 0.6);
+  border-radius: 5px;
+  padding: 20px;
+}
+
+.show {
+  display: inherit;
+}

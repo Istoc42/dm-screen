@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/home.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/ezgp.css" />
+
+    <script src="https://kit.fontawesome.com/ab7f1de69b.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+    <title>DM Screen</title>
+  </head>
+  <body>
+    <nav class="nav-container">
+      <ul>
+        <li class="tab active">
+          <a href="#">NPC Generator</a>
+        </li>
+
+        <li class="tab">
+          <a href="#">Currency Converter</a>
+        </li>
+
+        <li class="tab">
+          <a href="#">Dice Roller</a>
+        </li>
+      </ul>
+    </nav>
+
+    <div class="content-container">
+      <div class="content show" id="npc-gen">
+        <header class="title">
+          <h1 class="title-text">NPC Generator</h1>
+        </header>
+
+        <div class="container">
+          <div class="button-container">
+            <div class="npc-dropdown">
+              <select name="race-select" id="race-select" class="race-select">
+                <option value="random">Random NPC</option>
+                <option value="barovian">Barovian</option>
+                <option value="dragonborn">Dragonborn</option>
+                <option value="dwarf">Dwarf</option>
+                <option value="elf">Elf</option>
+                <option value="gnome">Gnome</option>
+                <option value="halfling">Halfling</option>
+                <option value="halforc">Half-Orc</option>
+                <option value="human">Human</option>
+                <option value="tiefling">Tiefling</option>
+              </select>
+            </div>
+
+            <div class="random race-btns active" id="random">
+              <button class="btn-large new-npc-btn" id="new-npc-btn">Generate Random NPC</button>
+              <div class="small-btns">
+                <button class="btn new-npc-btn" id="new-npc-btn-male">Generate Random Male NPC</button>
+                <button class="btn new-npc-btn" id="new-npc-btn-female">Generate Random Female NPC</button>
+              </div>
+            </div>
+
+            <div class="barovian race-btns" id="barovian-btns">
+              <button class="btn-large new-barovian" id="new-barovian">Generate Random Barovian</button>
+
+              <div class="small-btns">
+                <button class="btn new-barovian-male" id="new-barovian-male">Generate Random Barovian Male</button>
+                <button class="btn new-barovian-female" id="new-barovian-female">Generate Random Barovian Female</button>
+              </div>
+            </div>
+
+            <div class="dwarf race-btns" id="dwarf-btns">
+              <button class="btn-large new-dwarf" id="new-dwarf">Generate Random Dwarf</button>
+
+              <div class="small-btns">
+                <button class="btn new-dwarf-male" id="new-dwarf-male">Generate Random Male Dwarf</button>
+                <button class="btn new-dwarf-female" id="new-dwarf-female">Generate Random Female Dwarf</button>
+              </div>
+            </div>
+
+            <div class="dragonborn race-btns" id="dragonborn-btns">
+              <button class="btn-large new-dragonborn" id="new-dragonborn">Generate Random Dragonborn</button>
+
+              <div class="small-btns">
+                <button class="btn new-dragonborn-male" id="new-dragonborn-male">Generate Random Male Dragonborn</button>
+                <button class="btn new-dragonborn-female" id="new-dragonborn-female">Generate Random Female Dragonborn</button>
+              </div>
+            </div>
+
+            <div class="elf race-btns" id="elf-btns">
+              <button class="btn-large new-elf" id="new-elf">Generate Random Elf</button>
+
+              <div class="small-btns">
+                <button class="btn new-elf-male" id="new-elf-male">Generate Random Male Elf</button>
+                <button class="btn new-elf-female" id="new-elf-female">Generate Random Female Elf</button>
+              </div>
+            </div>
+
+            <div class="gnome race-btns" id="gnome-btns">
+              <button class="btn-large new-gnome" id="new-gnome">Generate Random Gnome</button>
+
+              <div class="small-btns">
+                <button class="btn new-gnome-male" id="new-gnome-male">Generate Random Male Gnome</button>
+                <button class="btn new-gnome-female" id="new-gnome-female">Generate Random Female Gnome</button>
+              </div>
+            </div>
+
+            <div class="halfling race-btns" id="halfling-btns">
+              <button class="btn-large new-halfling" id="new-halfling">Generate Random Halfling</button>
+
+              <div class="small-btns">
+                <button class="btn new-halfling-male" id="new-halfling-male">Generate Random Male Halfling</button>
+                <button class="btn new-halfling-female" id="new-halfling-female">Generate Random Female Halfling</button>
+              </div>
+            </div>
+
+            <div class="halforc race-btns" id="halforc-btns">
+              <button class="btn-large new-halforc" id="new-halforc">Generate Random Half-Orc</button>
+
+              <div class="small-btns">
+                <button class="btn new-halforc-male" id="new-halforc-male">Generate Random Male Half-Orc</button>
+                <button class="btn new-halforc-female" id="new-halforc-female">Generate Random Female Half-Orc</button>
+              </div>
+            </div>
+
+            <div class="human race-btns" id="human-btns">
+              <button class="btn-large new-human" id="new-human">Generate Random Human</button>
+
+              <div class="small-btns">
+                <button class="btn new-human-male" id="new-human-male">Generate Random Male Human</button>
+                <button class="btn new-human-female" id="new-human-female">Generate Random Female Human</button>
+              </div>
+            </div>
+
+            <div class="tiefling race-btns" id="tiefling-btns">
+              <button class="btn-large new-tiefling" id="new-tiefling">Generate Random Tiefling</button>
+
+              <div class="small-btns">
+                <button class="btn new-tiefling-male" id="new-tiefling-male">Generate Random Male Tiefling</button>
+                <button class="btn new-tiefling-female" id="new-tiefling-female">Generate Random Female Tiefling</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="card-container" id="card-container">
+            <div class="card">
+              <h4>Name: <span id="random-npc-name"></span></h4>
+              <h4>Race: <span id="random-npc-race"></span></h4>
+              <h4>Trait: <span id="random-npc-trait"></span></h4>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="content" id="ezgp">
+        <div class="ezgp-container">
+          <div class="ezgp-header">
+            <h1>EZgp</h1>
+            <hr />
+            <h4>How much gp do I have?</h4>
+          </div>
+
+          <form class="input-area">
+            <div>
+              <label for="cp">CP: </label>
+              <input class="copper" type="number" name="cp" id="cpInput" />
+            </div>
+            <div>
+              <label for="silver">SP: </label>
+              <input class="silver" type="number" name="sp" id="spInput" />
+            </div>
+            <div>
+              <label for="electrum">EP: </label>
+              <input class="electrum" type="number" name="ep" id="epInput" />
+            </div>
+            <div>
+              <label for="gold">GP: </label>
+              <input class="gold" type="number" name="gp" id="gpInput" />
+            </div>
+            <div>
+              <label for="platinum">PP: </label>
+              <input class="platinum" type="number" name="pp" id="ppInput" />
+            </div>
+          </form>
+
+          <div class="total-container" id="output">
+            <div class="total" id="total">
+              <h4>Total gp:</h4>
+              <div id="gpOutput"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="content" id="dice-roller">
+        <h1>Dice roller</h1>
+        <h1>--WORK IN PROGRESS--</h1>
+      </div>
+    </div>
+
+    <script src="js/buttons.js"></script>
+    <script src="js/data.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/ezgp.js"></script>
+    <script src="js/home.js"></script>
+  </body>
+</html>

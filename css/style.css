@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  height: 100vh;
+}
+
+.title {
+  color: #fff;
+}
+
+.container {
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  width: 800px;
+}
+
+.drop-btn {
+  margin-bottom: 0;
+  padding: 1rem;
+  border-radius: 10px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+  cursor: pointer;
+  width: 100%;
+  margin: 2px;
+}
+
+.npc-dropdown {
+  width: 100%;
+}
+
+.npc-dropdown select {
+  width: 100%;
+  padding: 1rem 0;
+  margin-bottom: 0.5rem;
+  border-radius: 10px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+  cursor: pointer;
+  text-align: center;
+}
+
+.button-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 1rem;
+  width: 350px;
+}
+
+.btn {
+  margin-bottom: 0;
+  padding: 1rem;
+  border-radius: 10px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+  cursor: pointer;
+  width: 50%;
+  margin: 2px;
+}
+
+.btn-large {
+  width: 100%;
+  padding: 1rem 0;
+  margin-bottom: 0.5rem;
+  border-radius: 10px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+  cursor: pointer;
+}
+
+.race-btns {
+  margin: 1rem 0 0 0;
+  display: none;
+}
+
+.active {
+  display: block;
+}
+
+.small-btns {
+  display: flex;
+}
+
+.card-container {
+  border: 1px solid black;
+  padding: 0 0 0 1rem;
+  border-radius: 10px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+  background-color: rgba(255, 255, 255, 0.5);
+  width: 450px;
+}
+
+.card {
+  font-size: 1.2rem;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  margin-top: 0.25rem;
+}
+
+.card h4 {
+  margin: 1rem 0;
+}
+
+span {
+  font-weight: 600;
+}
+
+footer {
+  background-color: rgba(255, 255, 255, 0.5);
+  margin: 2rem;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  color: black;
+  border: 1px solid black;
+  border-radius: 10px;
+  font-weight: bold;
+}
+
+@media (max-width: 800px) {
+  html {
+    background: url('https://wallpaperaccess.com/full/1868703.jpg') no-repeat center center;
+  }
+
+  body {
+    min-height: 100vh;
+  }
+
+  .container {
+    flex-direction: column;
+    width: auto;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .button-container {
+    padding-bottom: 2rem;
+  }
+
+  .card-container {
+    width: 350px;
+  }
+}
