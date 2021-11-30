@@ -14,6 +14,8 @@ tabs.forEach((tab, idx) => {
       document.body.style.backgroundImage = 'url(https://images.pexels.com/photos/3790639/pexels-photo-3790639.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260)'
     } else if (idx === 2) {
       document.body.style.backgroundImage = 'url(https://free4kwallpapers.com/uploads/originals/2018/10/08/dice-wallpaper.jpg)'
+    } else if (idx === 3) {
+      document.body.style.backgroundImage = 'url(https://kafkadesk.org/wp-content/uploads/2019/07/gold-treasure-hungary-e1563912397896.jpg)'
     }
 
     tab.classList.add('active')
