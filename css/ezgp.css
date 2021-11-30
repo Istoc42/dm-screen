@@ -64,11 +64,23 @@ input:focus {
   font-size: 2rem;
 }
 
-input[type=number] {
-    -moz-appearance: textfield;
-  }
+input[type='number'] {
+  -moz-appearance: textfield;
+}
 
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
   -webkit-appearance: none;
   margin: 0;
+}
+
+@media (max-width: 650px) {
+  .ezgp-container {
+    width: 400px;
+    min-width: 400px;
+  }
+
+  .input-area {
+    flex-direction: column;
+  }
+}
